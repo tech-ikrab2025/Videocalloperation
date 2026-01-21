@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import io from "socket.io-client";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://videocalloperation.onrender.com:5000");
 
 export default function VideoCall({ roomId }) {
   const localVideo = useRef();
